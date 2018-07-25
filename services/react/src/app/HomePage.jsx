@@ -1,33 +1,14 @@
 // libs
 import React from 'react';
 // components
+import Header from './components/Header.jsx';
 // styles
 import '../css/homepage.css';
 
 const HomePage = () => {
 	return (
 		<section className='homepage'>
-			<header>
-				<div className='content'>
-					<a href='index.html' className='desktop logo'>Fotomatic</a>
-					<nav className='desktop'>
-						<ul>
-							<li><a href='/#'>Product detail</a></li>
-							<li><a href='/#'>About us</a></li>
-							<li><a href='https://www.instagram.com/'>Follow us <img className='icon' src={require('../img/instagram.png')} /></a></li>
-						</ul>
-					</nav>
-					<nav className='mobile'>
-						<ul>
-							<li><a href='/#'><img src={require('../img/ic-logo.svg')} /></a></li>
-							<li><a href='/#'><img src={require('../img/ic-product-detail.svg')} /></a></li>
-							<li><a href='/#'><img src={require('../img/ic-about-us.svg')} /></a></li>
-							<li><a href='/#' className='button'>Join us</a></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
-
+			<Header />
 			<div className='main-content'>
 
 				<div id='sign-up-section' className='banner'>
