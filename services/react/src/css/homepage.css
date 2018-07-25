@@ -1,3 +1,8 @@
+	/* <link rel="stylesheet" href="./css/reset.css"> */
+	/* <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet"> */
+	/* <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"> */
+	/* <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet"> */
+
 /* Universal Styles */
 
 html {
@@ -119,7 +124,7 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
-  background-image: url('../images/banner-landingpage.jpg');
+  background-image: url('../img/banner-landingpage.jpg');
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
