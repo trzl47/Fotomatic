@@ -19,8 +19,8 @@ services:
     depends_on:
       - react-nginx
    environment:
-      VIRTUAL_HOST: fotomaticg.tbrownkcdev.com
-      LETSENCRYPT_HOST: fotomaticg.tbrownkcdev.com
+      VIRTUAL_HOST: fotomatic.tbrownkcdev.com
+      LETSENCRYPT_HOST: fotomatic.tbrownkcdev.com
       LETSENCRYPT_EMAIL: brownty47@gmail.com
 networks:
   default:
