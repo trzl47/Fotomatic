@@ -17,12 +17,10 @@ class App extends React.Component {
 			<RedirectWithStatus key={Math.random() + 'REDIRECT_'} from={from} to={to} status={status} />
 		);
 		return (
-			<React.Fragment>
-				<Switch>
-					{routes}
-					{redirects}
-				</Switch>
-			</React.Fragment>
+			<Switch>
+				{routes}
+				{redirects}
+			</Switch>
 		);
 	}
 }
