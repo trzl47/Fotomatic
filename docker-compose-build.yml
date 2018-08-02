@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3'
 services:
   react:
     build:
@@ -15,16 +15,18 @@ services:
     env_file: .env
     environment:
       - NODE_ENV=production
-  react-nginx:
+  foto-nginx:
     build:
-      context: ./services/react-nginx/
+      context: ./services/foto-nginx/
       dockerfile: Dockerfile
-    image: react-nginx
-    container_name: fotomatic-nginx
+    image: foto-nginx
+    container_name: foto-nginx
     restart: always
     volumes:
       - ./services/react/build/client/:/client
     env_file: .env
+    environment:
+      - NODE_ENV=production
     depends_on:
       - react
   reverseproxy:
@@ -32,10 +34,10 @@ services:
       context: ./services/reverseproxy/
       dockerfile: Dockerfile
     image: reverseproxy
-    container_name: fotomatic-proxy
+    container_name: reverseproxy
     restart: always
     ports:
       - 80:80 # react app
     depends_on:
       - react
-      - react-nginx
+      - foto-nginx

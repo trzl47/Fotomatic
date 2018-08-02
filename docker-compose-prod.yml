@@ -1,0 +1,23 @@
+version: '3'
+services:
+  foto-nginx:
+    image: trzl/portfolio:foto-react.1
+    container_name: foto-nginx
+    restart: unless-stopped
+  reverseproxy:
+    image: trzl/portfolio:foto-proxy.1
+    container_name: foto-proxy
+    restart: unless-stopped
+    expose:
+      - "80"
+      - "443"
+    depends_on:
+      - foto-nginx
+    environment:
+      VIRTUAL_HOST: fotomatic.tbrownkcdev.com
+      LETSENCRYPT_HOST: fotomatic.tbrownkcdev.com
+      LETSENCRYPT_EMAIL: brownty47@gmail.com
+networks:
+  default:
+    external:
+      name: webproxy
