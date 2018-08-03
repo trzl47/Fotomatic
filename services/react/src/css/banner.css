@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Damion');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+.banner {
+	margin-top: 1.6rem;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 60vh;
+  background-image: url('../img/banner-landingpage.jpg');
+  background-position: center;
+  background-size: cover;
+	background-repeat: no-repeat;
+}
+@media only screen and (min-width: 768px) {
+	.banner {
+		padding: 5rem;
+	}
+}
+
+.sign-up {
+  border: solid 1px #979797;
+  border-radius: 4px;
+	background-color: #9dc20b;
+	text-align: center;
+}
+@media only screen and (min-width: 768px) {
+	.sign-up {
+		padding: 0 5rem 2.5rem 5rem;
+	}
+}
+
+.banner .button {
+  margin-top: 1.625rem;
+	padding: 1rem 2.25rem;
+  border-radius: 4px;
+  background-color: #4a4a4a;
+	color: white;
+	box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+	.banner .button {
+		padding: 1.25rem 7.25rem;
+	}
+}
+
+.content {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: white;
+}
+
+.sign-up h1 {
+  font-size: 3.125rem;
+}
+
+.sign-up h2 {
+  font-size: 2.25rem;
+}
+
+.sign-up span strong {
+  font-weight: bold;
+}
+
+.sign-up .cursive {
+  font-family: "Damion", cursive;
+}
+
+.sign-up .striking {
+  font-family: "Rubik", sans-serif;
+  padding-bottom: .75rem;
+}

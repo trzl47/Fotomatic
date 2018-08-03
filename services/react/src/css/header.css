@@ -1,0 +1,56 @@
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: grid;
+	grid-template-areas:
+		'brand nav';
+	justify-content: space-around;
+	border-bottom: solid 1px #c6c1c1;
+	background-color: #fff;
+}
+.header .brand,
+.header .product,
+.header .about,
+.header .social {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+  line-height: 1.6;
+  font-size: 1rem;
+	color: #4a4a4a;
+	text-decoration: none;
+  padding: 0 1.875rem;
+}
+.header .product:hover,
+.header .about:hover,
+.header .social:hover {
+	color: #9dc20b;
+}
+.header .button {
+	background-color: #9dc20b;
+	line-height: 1.6;
+	color: white;
+}
+.header .button:hover {
+	color: #4a4a4a;
+}
+
+.brand { grid-area: brand; }
+.icon { width: 1.5rem; }
+
+.nav {
+	grid-area: nav;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.desktop { display: none; }
+.mobile { display: block; }
+@media only screen and (min-width: 768px) {
+	.desktop { display: block; }
+	.mobile { display: none; }
+}
